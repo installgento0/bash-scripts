@@ -31,7 +31,13 @@ Make the following change under ImageMagick's policy file:
 `sudo nano /etc/ImageMagick-6/policy.xml`
 or
 `sudo nano /etc/ImageMagick/policy.xml`
-under ```xml<policy domain="coder" rights="none" pattern="PDF" />```
-change it to ```xml<policy domain="coder" rights="read|write" pattern="PDF" />```
+under 
+```xml
+<policy domain="coder" rights="none" pattern="PDF" />
+```
+change it to 
+```xml
+<policy domain="coder" rights="read|write" pattern="PDF" />
+```
 
 More scripts to be added soon.
