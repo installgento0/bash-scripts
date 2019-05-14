@@ -1,7 +1,7 @@
 # bash-scripts
 Some useful bash scripts.
 
-**video-convert: (requires ffmpeg)***
+**video-convert: (requires ffmpeg)**
 Converts a video file to a chosen common video format with a profile of your choice using ffmpeg.
 
 
@@ -13,7 +13,7 @@ Make the script executable:
 Run the script: 
 `./video-convert filename.extension`
 
-**image-convert: (requires imagemagick)***
+**image-convert: (requires imagemagick)**
 Converts an image file to a chosen common format and scales it up/down using ImageMagick.
 
 
@@ -28,10 +28,15 @@ Run the script:
 In order to make PDF convertions:
 
 Make the following change under ImageMagick's policy file:
+
 `sudo nano /etc/ImageMagick-6/policy.xml`
+
 or
+
 `sudo nano /etc/ImageMagick/policy.xml`
-under 
+
+under
+
 ```xml
 <policy domain="coder" rights="none" pattern="PDF" />
 ```
