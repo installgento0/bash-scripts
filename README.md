@@ -1,6 +1,6 @@
 # bash-scripts
 Some useful bash scripts.
-##**video-converter:**
+##video-converter:
 Converts a video file to a chosen common video format with a video profile of your choice.
 Usage: 
 Make the script executable: 
