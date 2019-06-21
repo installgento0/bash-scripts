@@ -1,6 +1,9 @@
 # bash-scripts
 Some useful bash scripts.
 
+**clonepurge: (OSX - requires coreutils)**
+Compares MD5 hashes of files within a directory and deletes duplicates.
+
 **video-convert: (requires ffmpeg)**
 Converts a video file to a chosen common video format with a profile of your choice using ffmpeg.
 
