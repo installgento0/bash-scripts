@@ -17,9 +17,9 @@ read -p 'Profile?
 ' profile
 
 case "$output" in
-"1") ffmpeg -i $FILE -f mp4 -vcodec libx264 -preset fast -profile:v $profile -acodec aac output.mp4 ;;
+"1") ffmpeg -i $FILE -f mp4 -vcodec copy -preset fast -profile:v $profile -acodec copy output.mp4 ;;
 "2") ffmpeg -i $FILE -c:v libvpx -crf 10 -b:v 1M -c:a libvorbis -profile:v $profile output.webm ;;
-"3") ffmpeg -i $FILE -f matroska -vcodec libx264 -acodec libvorbis -profile:v $profile output.mkv ;;
+"3") ffmpeg -i $FILE -f matroska -vcodec copy -acodec copy -profile:v $profile output.mkv ;;
 "4") ffmpeg -i $FILE -acodec copy -vcodec copy -f mov -profile:v $profile output.mov ;;
 "5") ffmpeg -i $FILE -vcodec copy -acodec copy -profile:v $profile filename.avi ;;
 "6") ffmpeg -i $FILE output.gif ;;
