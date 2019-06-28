@@ -52,4 +52,10 @@ change it to
 
 The output of `ls -l /bin/sh` for my system is dash. This means that POSIX-compliant scripts will run faster than using bash (eg. Arch linux's default setting). However, scripts written for BASH that make use of ["BASHisms"](https://mywiki.wooledge.org/Bashism) (features not defined by POSIX) won't work in dash, and some other setups.
 
+Clonepurge doesn't seem to delete off all duplicate files at once. It may need to be executed multiple times in order to get rid of all duplicates (which is not ideal and thus needs fixing).
+
+**To-do:**
+
+- Add cut functionality to video-convert 
+
 More scripts to be added soon.
